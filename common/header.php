@@ -91,13 +91,14 @@ echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
 							<li class="leaf"><a href="http://www.library.rochester.edu/chat" title="">Chat</a></li>
 							<li class="leaf"><a href="http://rbscp.lib.rochester.edu/files/forms/contact_redirect.php" title="">Contact RBSCP</a></li>
 							<li class="leaf"><a href="http://rcld7.lib.rochester.edu/giving/" title="">Giving</a></li>
-							<li class="last leaf"><a href="/blog">Blog</a></li>
+							<li class="last leaf"><a href="https://rbscp.lib.rochester.edu/blog">Blog</a></li>
 						</ul>  
                 	</div>
 				</div>  
         	</div>
      	</nav>
  
+            
  <!-- End content from RBSCP header -->         
           
         </div>

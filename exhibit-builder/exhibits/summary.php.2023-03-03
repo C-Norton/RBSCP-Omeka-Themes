@@ -1,13 +1,5 @@
 <?php echo head(array('title' => metadata('exhibit', 'title'), 'bodyclass' => 'exhibits summary')); ?>
-<?php
-function debug_to_console($data) {
-    $output = $data;
-    if (is_array($output))
-        $output = implode(',', $output);
 
-    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
-}
-?>
 <?php
 $pageTree = exhibit_builder_page_tree();
 if ($pageTree):
@@ -15,22 +7,10 @@ if ($pageTree):
 
 <div class="col-md-4">
     <nav id="exhibit-pages" style="">
-        <?php
-        // conditional logic added here to override font color for page tree links (specifically John a Williams
-        // Where the link color will be invisible or hard to read - 20230304, cnorton9
+	<?php echo $pageTree
 
-        $this_exhibitiontitle = metadata('exhibit', 'title');
-        if (preg_match('/Writings of Consequence: The Art of John A. Williams/',$this_exhibitiontitle)){
-            $pageTreeArray = explode('<a href',$pageTree); //grab all the links
-            echo $pageTreeArray[0];
-            for ($i=1; $i<sizeof($pageTreeArray); $i++){
-                echo '<a style="color:#505050;" href'.$pageTreeArray[$i]; // add a style block.
-            }
-        }
 
-        else{
-        echo $pageTree;}
-        ?>
+?>
     </nav>
     <?php endif; ?>
 </div>

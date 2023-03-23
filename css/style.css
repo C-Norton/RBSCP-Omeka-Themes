@@ -10,7 +10,7 @@ body>.navbar {
     transition: background-color .3s ease-in
 }
 
-@media (min-width:768px) {
+@media (min-width:767px) {
     body>.navbar-transparent {
         background-color: transparent
     }
@@ -18,6 +18,7 @@ body>.navbar {
         background-color: transparent!important
     }
 }
+
 
 /*body {
     padding-top: 0
@@ -832,7 +833,7 @@ body.exhibits.show .region.region-footer{
     }
 
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 
   .tb-large {
     padding-top: 0;
@@ -852,9 +853,11 @@ body.exhibits.show .region.region-footer{
     div#navbar-main {
         background: rgba(1, 29, 71, 0.93);
     }
+    
     .main-navigation-wrapper{
-        width: 100%!important;
+        width: 100%;
     }
+   
     .main-navigation ul{
         display: block;
     }
@@ -922,7 +925,7 @@ body.exhibits.show .region.region-footer{
 
 
 /* Responsive settings for the transparent top bar */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
   .top-bar.tb-transp {
     background: #111111;

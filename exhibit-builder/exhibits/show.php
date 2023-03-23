@@ -19,7 +19,11 @@ echo head(array(
      /*Exhibit Object ( [title] => Wilson's Days: The Life and Legacy of Joseph C. Wilson [description] =>
 Meliora is the motto of the University of Rochester, and translates from the Latin as “ever better.” The form in Latin has an imperative quality—an exhortation to do better and to be better.
 */
-     echo "<a href='/exhibits'>Home</a>";
+     
+// new code added to link to the exhibit home, rather than the RBSCP Exhibits homepage, which really isn't used.  the next line, commented out, is the default behavior - 20211216, jss 
+     //echo "<a href='/exhibits'>Home</a>";
+     echo "<a href='/exhibits/show/" . $exhibit['slug'] . "'>Home</a>";     
+     
      
 // This is the function that outputs the exhibit name and link to exhibit home - replacing with just the text 'home' per SM from 10/18 meeting notes: . exhibit_builder_link_to_exhibit($exhibit)
      
